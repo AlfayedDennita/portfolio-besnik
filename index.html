@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta name="description" content="Besnik Landing Page Design" />
+    <meta name="keyword" content="besnik, landing page, design" />
+    <meta name="author" content="Alfayed Dennita" />
+    <meta name="theme-color" content="#00d664" />
+    <link rel="icon" type="images/x-icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <title>Besnik</title>
+  </head>
+  <body
+    class="relative min-h-screen overflow-x-hidden bg-white font-roboto text-neutral-500 accent-primary-400 selection:bg-primary-50 after:fixed after:inset-0 after:-z-10 after:bg-neutral-900 after:opacity-0 after:transition-all lg:after:hidden"
+  >
+    <!-- Header Start -->
+    <header>
+      <div
+        class="relative mx-auto flex max-w-screen-lg items-center justify-between gap-4 p-6 lg:py-8"
+      >
+        <h1
+          class="font-fira-mono text-2xl font-medium tracking-tighter transition-colors hover:text-primary-400"
+        >
+          <a href="" title="Besnik">Besnik.</a>
+        </h1>
+
+        <button
+          class="hamburger-btn group z-50 flex h-6 w-8 cursor-pointer flex-col items-end justify-between rounded-lg bg-white lg:hidden"
+          title="Open Navigation Menu"
+        >
+          <span
+            class="h-1 w-full rounded-full bg-neutral-500 transition-all group-hover:bg-primary-400"
+          ></span>
+          <span
+            class="h-1 w-full rounded-full bg-neutral-500 transition-all group-hover:bg-primary-400"
+          ></span>
+          <span
+            class="h-1 w-full rounded-full bg-neutral-500 transition-all group-hover:bg-primary-400"
+          ></span>
+        </button>
+
+        <nav
+          class="invisible fixed inset-y-0 -right-full z-40 flex w-full flex-col gap-8 overflow-y-auto bg-white pb-14 pt-28 transition-all sm:w-5/6 sm:rounded-tl-3xl sm:rounded-bl-3xl lg:visible lg:static lg:z-auto lg:contents"
+        >
+          <ul class="lg:flex lg:items-center lg:gap-4">
+            <li class="submenu relative">
+              <button
+                class="submenu-toggle menu-btn after:font-awesome after:content-['\f0d7']"
+                title="Why Besnik"
+              >
+                Why Besnik
+              </button>
+              <ul
+                class="invisible max-h-0 overflow-hidden bg-white transition-all lg:absolute lg:left-0 lg:min-w-[10rem] lg:rounded-lg lg:shadow-lg"
+              >
+                <li>
+                  <a
+                    class="menu-btn pl-12 sm:pl-16 lg:pl-4"
+                    href="#clients"
+                    title="Famous Clients"
+                    >Famous Clients</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="menu-btn pl-12 sm:pl-16 lg:pl-4"
+                    href="#job-categories"
+                    title="Many Jobs"
+                    >Many Jobs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="menu-btn pl-12 sm:pl-16 lg:pl-4"
+                    href="#reviews"
+                    title="Helped Talents"
+                    >Helped Talents</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="menu-btn" href="#" title="About Us">About Us</a>
+            </li>
+            <li>
+              <a class="menu-btn" href="#" title="Blog">Blog</a>
+            </li>
+          </ul>
+
+          <ul class="lg:flex lg:items-center lg:gap-4">
+            <li class="submenu relative">
+              <button
+                class="submenu-toggle menu-btn after:font-awesome after:content-['\f0d7']"
+                title="English"
+              >
+                <span><i class="fas fa-language mr-2"></i>EN</span>
+              </button>
+              <ul
+                class="invisible max-h-0 overflow-hidden bg-white transition-all lg:absolute lg:left-0 lg:min-w-[10rem] lg:rounded-lg lg:shadow-lg"
+              >
+                <li>
+                  <a
+                    class="menu-btn pl-12 font-medium text-primary-400 sm:pl-16 lg:pl-4"
+                    href="#"
+                    title="English"
+                    >EN</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="menu-btn pl-12 sm:pl-16 lg:pl-4"
+                    href="#"
+                    title="Indonesian"
+                    >ID</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="login-btn btn mx-6 my-4 sm:mx-10 lg:m-0"
+                href="#"
+                title="Login"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <main>
+      <!-- Hero Start -->
+      <section id="hero">
+        <div
+          class="mx-auto grid max-w-screen-lg items-center justify-items-center gap-16 py-16 px-6 pb-0 text-center lg:grid-cols-2 lg:text-left"
+        >
+          <div class="flex max-w-xl flex-col gap-8">
+            <h2 class="text-5xl font-bold text-neutral-600">
+              Find & Hire Expert Freelancers
+            </h2>
+            <p>
+              Work with the best freelance talent from around the world on our
+              secure flexible and cost-effective platform.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 lg:justify-start">
+              <a class="btn" href="#" title="Explore Freelancers"
+                >Explore Freelancers</a
+              >
+              <a class="btn-outline" href="#" title="Learn More">Learn More</a>
+            </div>
+          </div>
+
+          <img
+            class="max-h-[30rem] bg-[url('images/hero-image-bg.png')] bg-cover bg-center lg:justify-self-end"
+            src="images/hero-image.png"
+            alt="Freelancer with Laptop"
+          />
+        </div>
+      </section>
+      <!-- Hero End -->
+
+      <!-- Clients Start -->
+      <section id="clients" class="bg-neutral-100">
+        <div
+          class="mx-auto flex max-w-screen-lg flex-col gap-12 px-6 py-16 text-center lg:gap-14"
+        >
+          <h2 class="font-medium uppercase text-neutral-300">
+            Some of Our Trusted Clients
+          </h2>
+          <ul
+            class="flex flex-wrap items-center justify-center gap-x-8 gap-y-12 lg:gap-16"
+          >
+            <li>
+              <a href="#" target="_blank" rel="nofollow" title="Stripe"
+                ><img
+                  class="max-h-8 max-w-[6rem] opacity-40 transition-opacity hover:opacity-60"
+                  src="images/clients/stripe.png"
+                  alt="Stripe"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow" title="Google"
+                ><img
+                  class="max-h-8 max-w-[6rem] opacity-40 transition-opacity hover:opacity-60"
+                  src="images/clients/google.png"
+                  alt="Google"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                rel="nofollow"
+                title="Belo Horizonte Metro"
+                ><img
+                  class="max-h-8 max-w-[6rem] opacity-40 transition-opacity hover:opacity-60"
+                  src="images/clients/belo-horizonte-metro.png"
+                  alt="Belo Horizonte Metro"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow" title="IBM"
+                ><img
+                  class="max-h-8 max-w-[6rem] opacity-40 transition-opacity hover:opacity-60"
+                  src="images/clients/ibm.png"
+                  alt="IBM"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow" title="Samsung"
+                ><img
+                  class="max-h-8 max-w-[6rem] opacity-40 transition-opacity hover:opacity-60"
+                  src="images/clients/samsung.png"
+                  alt="Samsung"
+              /></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="nofollow" title="Nokia"
+                ><img
+                  class="max-h-8 max-w-[6rem] opacity-40 transition-opacity hover:opacity-60"
+                  src="images/clients/nokia.png"
+                  alt="Nokia"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Clients End -->
+
+      <!-- Job Categories Start -->
+      <section id="job-categories">
+        <div
+          class="mx-auto flex max-w-screen-lg flex-col items-center gap-12 px-6 py-16 text-center"
+        >
+          <div class="flex max-w-xl flex-col gap-6">
+            <h2 class="text-3xl font-bold">What We Do</h2>
+            <p class="text-neutral-400">
+              Starting with a holistic assessment of your digital marketing,
+              creative, and development needs. We'll recommend flexible
+              solutions.
+            </p>
+          </div>
+
+          <ul
+            class="grid w-full justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-3"
+          >
+            <li
+              class="flex w-full flex-col gap-4 rounded-xl p-8 text-center transition-shadow hover:shadow-2xl hover:shadow-neutral-200"
+            >
+              <img
+                class="mx-auto h-12 w-12 object-contain object-center"
+                src="images/job-categories/programming-and-development.png"
+                height="3rem"
+                width="3rem"
+                alt="Programming & Development"
+              />
+              <h3 class="text-xl font-medium">Programming & Development</h3>
+              <p>542,730 Freelancers</p>
+              <a
+                class="mt-4 py-4 font-medium text-primary-400"
+                href="#"
+                title="Learn More"
+                >Learn More<i class="fas fa-angle-right ml-2"></i
+              ></a>
+            </li>
+            <li
+              class="flex w-full flex-col gap-4 rounded-xl p-8 text-center transition-shadow hover:shadow-2xl hover:shadow-neutral-200"
+            >
+              <img
+                class="mx-auto h-12 w-12 object-contain object-center"
+                src="images/job-categories/writing-and-translation.png"
+                height="3rem"
+                width="3rem"
+                alt="Writing & Translation"
+              />
+              <h3 class="text-xl font-medium">Writing & Translation</h3>
+              <p>407,825 Freelancers</p>
+              <a
+                class="mt-4 py-4 font-medium text-primary-400"
+                href="#"
+                title="Learn More"
+                >Learn More<i class="fas fa-angle-right ml-2"></i
+              ></a>
+            </li>
+            <li
+              class="flex w-full flex-col gap-4 rounded-xl p-8 text-center transition-shadow hover:shadow-2xl hover:shadow-neutral-200"
+            >
+              <img
+                class="mx-auto h-12 w-12 object-contain object-center"
+                src="images/job-categories/design-and-art.png"
+                height="3rem"
+                width="3rem"
+                alt="Design & Art"
+              />
+              <h3 class="text-xl font-medium">Design & Art</h3>
+              <p>226,229 Freelancers</p>
+              <a
+                class="mt-4 py-4 font-medium text-primary-400"
+                href="#"
+                title="Learn More"
+                >Learn More<i class="fas fa-angle-right ml-2"></i
+              ></a>
+            </li>
+            <li
+              class="flex w-full flex-col gap-4 rounded-xl p-8 text-center transition-shadow hover:shadow-2xl hover:shadow-neutral-200"
+            >
+              <img
+                class="mx-auto h-12 w-12 object-contain object-center"
+                src="images/job-categories/business-and-finance.png"
+                height="3rem"
+                width="3rem"
+                alt="Business & Finance"
+              />
+              <h3 class="text-xl font-medium">Business & Finance</h3>
+              <p>109,825 Freelancers</p>
+              <a
+                class="mt-4 py-4 font-medium text-primary-400"
+                href="#"
+                title="Learn More"
+                >Learn More<i class="fas fa-angle-right ml-2"></i
+              ></a>
+            </li>
+            <li
+              class="flex w-full flex-col gap-4 rounded-xl p-8 text-center transition-shadow hover:shadow-2xl hover:shadow-neutral-200"
+            >
+              <img
+                class="mx-auto h-12 w-12 object-contain object-center"
+                src="images/job-categories/education-and-training.png"
+                height="3rem"
+                width="3rem"
+                alt="Education & Training"
+              />
+              <h3 class="text-xl font-medium">Education & Training</h3>
+              <p>5,948 Freelancers</p>
+              <a
+                class="mt-4 py-4 font-medium text-primary-400"
+                href="#"
+                title="Learn More"
+                >Learn More<i class="fas fa-angle-right ml-2"></i
+              ></a>
+            </li>
+            <li
+              class="flex w-full flex-col gap-4 rounded-xl p-8 text-center transition-shadow hover:shadow-2xl hover:shadow-neutral-200"
+            >
+              <img
+                class="mx-auto h-12 w-12 object-contain object-center"
+                src="images/job-categories/sales-and-marketing.png"
+                height="3rem"
+                width="3rem"
+                alt="Sales & Marketing"
+              />
+              <h3 class="text-xl font-medium">Sales & Marketing</h3>
+              <p>4,001 Freelancers</p>
+              <a
+                class="mt-4 py-4 font-medium text-primary-400"
+                href="#"
+                title="Learn More"
+                >Learn More<i class="fas fa-angle-right ml-2"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Job Categories End -->
+
+      <!-- Reviews Start -->
+      <section
+        id="reviews"
+        class="bg-[url('images/reviews-bg.png')] bg-cover bg-fixed bg-center bg-no-repeat"
+      >
+        <div
+          class="mx-auto flex max-w-screen-lg flex-col items-center gap-20 px-6 py-16"
+        >
+          <h2
+            class="relative text-center text-3xl font-bold after:absolute after:-bottom-6 after:left-1/2 after:h-1 after:w-1/4 after:-translate-x-1/2 after:bg-primary-400"
+          >
+            Check Our Satisfied Talents
+          </h2>
+
+          <ul class="grid gap-8 md:grid-cols-2">
+            <li
+              class="flex flex-col gap-8 rounded-md border border-neutral-200 bg-white p-8 transition-shadow hover:shadow-2xl hover:shadow-neutral-200"
+            >
+              <p class="leading-loose">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Possimus officia quos voluptatem illo exercitationem praesentium
+                laudantium temporibus magnam reiciendis quibusdam nostrum, earum
+                deserunt quaerat error reprehenderit quae quas? Aliquid, eos.
+              </p>
+              <div class="flex items-center gap-4">
+                <img
+                  class="h-12 w-12 rounded-full object-cover"
+                  src="images/reviews/miranda-pickett.jpg"
+                  height="3rem"
+                  width="3rem"
+                  alt="Miranda Pickett"
+                />
+                <div>
+                  <p class="font-medium">Miranda Pickett</p>
+                  <p class="text-neutral-400">Photographer | Samsung</p>
+                </div>
+              </div>
+            </li>
+            <li
+              class="flex flex-col gap-8 rounded-md border border-neutral-200 bg-white p-8 transition-shadow hover:shadow-2xl hover:shadow-neutral-200"
+            >
+              <p class="leading-loose">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur, eligendi sed earum suscipit quas eius molestiae
+                odio quod similique enim, quam numquam adipisci et iste?
+              </p>
+              <div class="flex items-center gap-4">
+                <img
+                  class="h-12 w-12 rounded-full object-cover"
+                  src="images/reviews/euan-edge.jpg"
+                  height="3rem"
+                  width="3rem"
+                  alt="Euan Edge"
+                />
+                <div>
+                  <p class="font-medium">Euan Edge</p>
+                  <p class="text-neutral-400">UI Designer | Google</p>
+                </div>
+              </div>
+            </li>
+            <li
+              class="flex flex-col gap-8 rounded-md border border-neutral-200 bg-white p-8 transition-shadow hover:shadow-2xl hover:shadow-neutral-200"
+            >
+              <p class="leading-loose">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis, culpa placeat reprehenderit blanditiis saepe
+                perspiciatis natus consectetur deleniti corrupti quaerat nulla
+                dolores adipisci mollitia hic labore iure tempore atque dolor
+                suscipit?
+              </p>
+              <div class="flex items-center gap-4">
+                <img
+                  class="h-12 w-12 rounded-full object-cover"
+                  src="images/reviews/fenton-chambers.jpg"
+                  height="3rem"
+                  width="3rem"
+                  alt="Fenton Chambers"
+                />
+                <div>
+                  <p class="font-medium">Fenton Chambers</p>
+                  <p class="text-neutral-400">Business Planner</p>
+                </div>
+              </div>
+            </li>
+            <li
+              class="flex flex-col gap-8 rounded-md border border-neutral-200 bg-white p-8 transition-shadow hover:shadow-2xl hover:shadow-neutral-200"
+            >
+              <p class="leading-loose">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolores ut minima reprehenderit cumque quasi quidem debitis
+                minus vitae aliquam distinctio, laborum commodi ducimus. Eos id
+                fugit sapiente voluptates.
+              </p>
+              <div class="flex items-center gap-4">
+                <img
+                  class="h-12 w-12 rounded-full object-cover"
+                  src="images/reviews/nevaeh-ward.jpg"
+                  height="3rem"
+                  width="3rem"
+                  alt="Nevaeh Ward"
+                />
+                <div>
+                  <p class="font-medium">Nevaeh Ward</p>
+                  <p class="text-neutral-400">Tour Guide</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Reviews End -->
+    </main>
+
+    <footer class="bg-neutral-700 text-neutral-100 selection:text-neutral-500">
+      <!-- Footer Top Start -->
+      <section
+        id="footer-top"
+        class="mx-auto grid max-w-screen-lg justify-between gap-y-20 gap-x-12 px-6 pt-24 pb-16 md:grid-cols-2"
+      >
+        <div class="flex max-w-md flex-col gap-6">
+          <h2 class="text-2xl font-bold lg:text-3xl">
+            We'd love to have you join us!
+          </h2>
+          <p class="text-neutral-400">
+            You didn't become a freelancer to spend hours every week hunched in
+            front of your computer scrolling through endless job listings.
+          </p>
+          <div class="mt-8 flex flex-col gap-4">
+            <h3 class="uppercase tracking-wide text-neutral-300">
+              Social Media
+            </h3>
+            <ul class="flex flex-wrap gap-3">
+              <li>
+                <a
+                  class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-neutral-600 text-xl transition-colors hover:bg-primary-400"
+                  href="#"
+                  target="_blank"
+                  rel="nofollow"
+                  title="Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-neutral-600 text-xl transition-colors hover:bg-primary-400"
+                  href="#"
+                  target="_blank"
+                  rel="nofollow"
+                  title="Twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-neutral-600 text-xl transition-colors hover:bg-primary-400"
+                  href="#"
+                  target="_blank"
+                  rel="nofollow"
+                  title="YouTube"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-neutral-600 text-xl transition-colors hover:bg-primary-400"
+                  href="#"
+                  target="_blank"
+                  rel="nofollow"
+                  title="Medium"
+                  ><i class="fab fa-medium"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex w-full max-w-md flex-col gap-6 justify-self-end">
+          <h2 class="text-2xl font-bold lg:text-3xl">Contact us</h2>
+          <form
+            class="mt-4 flex flex-col gap-8 md:mt-0"
+            action=""
+            method="post"
+          >
+            <label
+              class="flex flex-col gap-3"
+              for="contact-us--name"
+              title="Name"
+            >
+              <span class="text-neutral-400">Name</span>
+              <input
+                class="border-b-2 border-neutral-500 bg-transparent py-1 transition-all focus:border-primary-400"
+                id="contact-us--name"
+                type="text"
+                required
+              />
+            </label>
+            <label
+              class="flex flex-col gap-3"
+              for="contact-us--mail"
+              title="Mail"
+            >
+              <span class="text-neutral-400">Mail</span>
+              <input
+                class="border-b-2 border-neutral-500 bg-transparent py-1 transition-all focus:border-primary-400"
+                id="contact-us--mail"
+                type="email"
+                required
+              />
+            </label>
+            <label
+              class="flex flex-col gap-3"
+              for="contact-us--message"
+              title="Message"
+            >
+              <span class="text-neutral-400">Your Message</span>
+              <textarea
+                class="min-h-[5rem] border-b-2 border-neutral-500 bg-transparent py-1 transition-all focus:border-primary-400"
+                id="contact-us--message"
+                type="text"
+                required
+              ></textarea>
+            </label>
+            <button class="btn self-start" type="submit" title="Contact Us">
+              Contact Us
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- Footer Top End -->
+
+      <hr class="border-t-2 border-neutral-600" />
+
+      <!-- Footer Bottom Start -->
+      <section
+        id="footer-bottom"
+        class="mx-auto grid max-w-screen-lg justify-between gap-12 py-16 px-6 sm:grid-cols-2 lg:grid-cols-4"
+      >
+        <div class="flex flex-col gap-6">
+          <h2 class="text-lg font-medium">For clients</h2>
+          <ul class="flex flex-col gap-4">
+            <li>
+              <a
+                class="block text-neutral-400 transition-colors hover:text-neutral-300"
+                href="#"
+                title="How to hire"
+                >How to hire</a
+              >
+            </li>
+            <li>
+              <a
+                class="block text-neutral-400 transition-colors hover:text-neutral-300"
+                href="#"
+                title="Project catalog"
+                >Project catalog</a
+              >
+            </li>
+            <li>
+              <a
+                class="block text-neutral-400 transition-colors hover:text-neutral-300"
+                href="#"
+                title="Talent marketplace"
+                >Talent marketplace</a
+              >
+            </li>
+            <li>
+              <a
+                class="block text-neutral-400 transition-colors hover:text-neutral-300"
+                href="#"
+                title="Talent scout"
+                >Talent scout</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <h2 class="text-lg font-medium">For talents</h2>
+          <ul class="flex flex-col gap-4">
+            <li>
+              <a
+                class="block text-neutral-400 transition-colors hover:text-neutral-300"
+                href="#"
+                title="How to find work"
+                >How to find work</a
+              >
+            </li>
+            <li>
+              <a
+                class="block text-neutral-400 transition-colors hover:text-neutral-300"
+                href="#"
+                title="Direct contracts"
+                >Direct contracts</a
+              >
+            </li>
+            <li>
+              <a
+                class="block text-neutral-400 transition-colors hover:text-neutral-300"
+                href="#"
+                title="Share experiences"
+                >Share experiences</a
+              >
+            </li>
+            <li>
+              <a
+                class="block text-neutral-400 transition-colors hover:text-neutral-300"
+                href="#"
+                title="Community"
+                >Community</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <h2 class="text-lg font-medium">Company</h2>
+          <ul class="flex flex-col gap-4">
+            <li>
+              <a
+                class="block text-neutral-400 transition-colors hover:text-neutral-300"
+                href="#"
+                title="About us"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                class="block text-neutral-400 transition-colors hover:text-neutral-300"
+                href="#"
+                title="Leadership"
+                >Leadership</a
+              >
+            </li>
+            <li>
+              <a
+                class="block text-neutral-400 transition-colors hover:text-neutral-300"
+                href="#"
+                title="Investor relations"
+                >Investor relations</a
+              >
+            </li>
+            <li>
+              <a
+                class="block text-neutral-400 transition-colors hover:text-neutral-300"
+                href="#"
+                title="Our impact"
+                >Our impact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <h2 class="text-lg font-medium">Get in touch</h2>
+          <p class="mt-2 text-neutral-400">
+            You'll find the next freelance value you prefer.
+          </p>
+          <form class="relative self-start" action="" method="post">
+            <input
+              class="w-full rounded-md bg-neutral-800 py-3 px-4 pr-14 placeholder:text-neutral-400"
+              type="email"
+              placeholder="Enter your mail"
+              title="Subscribe on Email"
+              required
+            />
+            <button
+              class="absolute right-4 top-1/2 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full border-2 border-primary-400 text-sm text-primary-400"
+              type="submit"
+              title="Subscribe"
+            >
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- Footer Bottom End -->
+
+      <!-- Credit Start -->
+      <section
+        id="credit"
+        class="mx-auto flex max-w-screen-lg flex-col items-center justify-between gap-4 px-6 pt-12 pb-8 sm:flex-row"
+      >
+        <h2 class="font-fira-mono text-2xl font-medium tracking-tighter">
+          Besnik.
+        </h2>
+        <p class="text-neutral-400">
+          Copyright &copy; 2022 | Coded by
+          <a
+            class="font-medium text-primary-400"
+            href="https://alfayeddennita.github.io"
+            target="_blank"
+            title="Alfayed Dennita"
+            >Alfayed</a
+          >
+          | Design by
+          <a
+            class="font-medium text-primary-400"
+            href="https://uihut.com/web-designs/hire-freelancer-landing-page/8398"
+            target="_blank"
+            rel="nofollow"
+            title="UIHUT"
+            >UIHUT</a
+          >
+        </p>
+      </section>
+      <!-- Credit End -->
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
