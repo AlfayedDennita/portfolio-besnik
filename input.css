@@ -32,7 +32,7 @@
 @tailwind utilities;
 
 body.nav-active {
-  @apply overflow-hidden after:z-10 after:opacity-50;
+  @apply overflow-hidden after:visible after:z-10 after:opacity-50;
 }
 
 body.nav-active .hamburger-btn > span:nth-child(2) {
